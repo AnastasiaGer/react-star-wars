@@ -1,15 +1,21 @@
 :root {
-  --color-dark-grey: #10100e;
-  --color-white: #fff;
-  --color-black: #000;
-  --border-radius-small: 3px;
-  --spacing-medium: 20px;
+	--color-white: #fff;
+	--color-black: #000;
+	--color-yellow: #ffff00;
+	--color-dark-gray: #10100e;
+
+	--spacing-medium: 20px;
+
+	--font-family-main: sans-serif;
+
+	--font-size-header: 26px;
+
+	--border-radius-small: 3px;
 }
 
-
 body {
-  margin: 0;
-  padding: 0;
-  background-color: var(--color-dark-grey);
-  font-family: sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: var(--color-dark-gray);
+	font-family: var(--font-family-main);
 }
