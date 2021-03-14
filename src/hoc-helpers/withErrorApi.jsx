@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import ErrorMessage from '../components/ErrorMessage/ErrorMessage';
+import ErrorMessage from '@components//ErrorMessage/ErrorMessage.jsx';
 
 export const withErrorApi = View => {
   return props => {

@@ -1,6 +1,5 @@
-import cn from 'classnames';
 import styles from './App.module.css';
-import PeoplePage from '../PeoplePage/PeoplePage'
+import PeoplePage from '@containers/PeoplePage/PeoplePage.jsx';
 
 const App = () => {
   return (

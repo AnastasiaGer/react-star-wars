@@ -1,13 +1,11 @@
-import {useEffect, useState} from 'react'
+import { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 
-import { withErrorApi } from '../../hoc-helpers/withErrorApi.jsx';
-
-import PeopleList from '../../components/PeoplePage/PeopleList/PeopleList';
-import {getPeopleID, getPeopleImage} from '../../services/getPeopleData'
-
-import {getApiResource} from '../../utils/network'
-import { API_PEOPLE} from '../../constants/api'
+import { withErrorApi } from '@hoc-helpers/withErrorApi';
+import { getApiResource } from '@utils/network';
+import { API_PEOPLE } from '@constants/api';
+import { getPeopleID, getPeopleImage } from '@services/getPeopleData';
+import PeopleList from '@components/PeoplePage/PeopleList/PeopleList.jsx';
 
 import styles from './PeoplePage.module.css';
 
