@@ -1,20 +1,30 @@
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import routesConfig from '@routes/routesConfig';
+import Header from '@components/Header';
+
 import styles from './App.module.css';
-import PeoplePage from '@containers/PeoplePage/PeoplePage.jsx';
-import HomePage from '@containers/HomePage/HomePage.jsx';
-import {NavLink, Route, BrowserRouter} from 'react-router-dom'
 
 const App = () => {
-  return (
-    <>
-    <BrowserRouter> 
-      <NavLink to="/" exact>Home</NavLink>
-      <NavLink to="/people" exact> People</NavLink>
+	return (
+		<>
+			<BrowserRouter>
+				<div className={styles.wrapper}>
+					<Header />
 
-      <Route path="/" exact component={HomePage} />
-      <Route path="/people" exact component={PeoplePage} />
-    </BrowserRouter>
-    </>
-  )
+					<Switch>
+						{routesConfig.map((route, index) => (
+							<Route
+								key={index}
+								path={route.path}
+								exact={route.exact}
+								component={route.component}
+							/>
+						))}
+					</Switch>
+				</div>
+			</BrowserRouter>
+		</>
+	)
 }
 
 export default App;
