@@ -1,6 +1,6 @@
 import HomePage from '@containers/HomePage';
 import PeoplePage from '@containers/PeoplePage';
-import NotFoundPage from '@containers/NotFoundPage'
+import NotFoundPage from '@containers/NotFoundPage';
 
 const routesConfig = [
     {
