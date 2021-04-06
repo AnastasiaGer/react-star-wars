@@ -23,6 +23,10 @@
 
 	--text-shadow-yellow:
 		0 0 2px var(--color-white),
+		0 0 40px var(--color-yellow);
+
+	--text-shadow-blue:
+		0 0 2px var(--color-white),
 		0 0 40px var(--color-blue);
 
 	--theme-default-header: #cccc46;
